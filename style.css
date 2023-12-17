@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: block;
+
+}
+hr {
+    border: dotted #051923 6px;
+    border-bottom: none;
+    width: 5%;
+    margin: 100px auto;
+  }
+
+.header{
+    width: 100%;
+    height: 50vh;
+    background: url(mountain.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600px;
+    margin-bottom: 5px;
+
+}
+.header h3{
+    color: white;
+    font-weight: 500px;
+    letter-spacing: 2px;
+}
+.mid-set .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.mid-set img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    display: block;
+
+}
+.mid-set h2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #023047;
+    font-size: 2.5rem;
+}
+.mid-set .para{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 200px;
+    color: #051923;
+    display: block;
+    line-height: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+}
+.parent{
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    line-height: 2;
+    padding: 5px;
+}
+.skill-content-1, .skill-content-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 350px;
+    margin-left: 40px;
+    
+}
+.get-in {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.get-in h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;  
+}
+.get-in > p{
+    text-align: center;
+    color: #5c6b73;
+    margin: 40px auto 60px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    width: 120px;
+    height: 60px;
+    background-color: #023047;
+    color: white;
+    border-radius: 16px;
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    margin-bottom: 100px;
+}
+ .button a:hover{
+    transition: .2s;
+    transform: scale(1.1);
+}
+.footer{
+    background-color: #3c6997;
+    width: 100%;
+    height: 30vh;
+    padding: 50px auto;
+    
+}
+.footer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 5vh;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    padding-top: 50px;
+}
+.footer a {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 20px;
+    text-decoration: underline;
+}
+
+.copyright {
+    color: #eaf6f6;
+    font-size: 1rem;
+    padding: 20px 0;
+}
+ @media (max-width:1200px) and (min-width:300px){
+    .skill > .parent{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .skill-content-1 .skill-content-2 {
+        display: flex;
+        flex-wrap: wrap;   
+    }
+}
